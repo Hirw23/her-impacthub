@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #8A2BE2;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-join {
+    background-color: #ff6600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-join:hover {
+    background-color: #e65c00;
+}
+
+/* Apply Hero Section */
+.apply-hero {
+    background: linear-gradient(to right, #6a1bb9, #ff6600);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.apply-hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.apply-hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Application Form */
+.apply-form {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.apply-form h2 {
+    text-align: center;
+    color: #8A2BE2;
+}
+
+.apply-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.apply-form input,
+.apply-form select,
+.apply-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Apply Button */
+.btn-apply {
+    width: 100%;
+    background-color: #ff6600;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-apply:hover {
+    background-color: #e65c00;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
