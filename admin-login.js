@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (email === adminCredentials.email && password === adminCredentials.password) {
             localStorage.setItem("adminToken", "secure-token"); // Store login session
-            window.location.href = "admin-dashboard.html"; // Redirect to dashboard
+            window.location.href = "admin-dashboard.php"; // Redirect to dashboard
         } else {
             errorMessage.textContent = "Invalid email or password!";
         }

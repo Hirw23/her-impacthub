@@ -1,48 +1,217 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.login-container {
-    background: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
+    background-color: #f4f4f4;
 }
 
-h2 {
-    color: #8A2BE2;
+h1, h2 {
+    color: #333;
 }
 
-input {
-    width: 100%;
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #003d80;
+}
+
+/* Filters */
+.filters {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
     padding: 10px;
-    margin: 10px 0;
+    width: 250px;
+    margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.btn {
-    background-color: #ff6600;
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
     color: white;
-    padding: 10px;
     border: none;
-    width: 100%;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-.btn:hover {
-    background-color: #e65c00;
+button:hover {
+    background-color: #0056b3;
 }
 
-.error-message {
-    color: red;
-    margin-top: 10px;
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    h1, h2 {
+        color: #333;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .filters {
+        margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+        width: 250px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #007bff;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
 }
